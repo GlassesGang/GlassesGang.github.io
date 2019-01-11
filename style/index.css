@@ -8,6 +8,12 @@ body {
 }
 
 ul#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* Keep at top */
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -37,4 +43,68 @@ ul.navbar li a:hover:not(.active) {
 
 .navsection { /* end of a section */
   border-right: 1px solid white;
+}
+
+.navpageunderconstruction {
+  background: rgba(220, 220, 0, 0.5);
+}
+
+.navpageunderconstruction:hover:not(.active) {
+  background: rgba(220, 220, 0, 1);
+}
+
+/* END OF HEADER STYLES */
+
+#body {
+  padding: 8px;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  margin-top: 46px;
+  min-height: 100vh;
+}
+
+#body.section {
+  color: #333;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+#body a {
+  color: black;
+  text-decoration: none;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 1px solid white;
+  width: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+}
+
+/* END OF BODY STYLES */
+
+div#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  
+  padding: 8px;
+
+  background: #333;
+
+  text-align: center;
+
+  color: white;
+}
+
+div#footer a {
+  color: white;
 }
