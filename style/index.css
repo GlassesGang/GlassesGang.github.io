@@ -8,12 +8,6 @@ body {
 }
 
 ul#navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-  /* Keep at top */
-
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -56,10 +50,8 @@ ul.navbar li a:hover:not(.active) {
 /* END OF HEADER STYLES */
 
 #body {
-  padding: 8px;
   background-image: url("background.jpg");
   background-repeat: repeat;
-  margin-top: 46px;
   min-height: 100vh;
 }
 
@@ -93,7 +85,8 @@ ul.navbar li a:hover:not(.active) {
 div#footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vh;
+  
   min-height: 100px;
   
   padding: 8px;
